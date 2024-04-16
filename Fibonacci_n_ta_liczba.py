@@ -1,0 +1,16 @@
+def fib(n):
+    if n <= 0:
+        return 0
+    if n == 1:
+        return 1
+    return fib(n - 1) + fib(n - 2)
+
+def gen(n):
+    a = 0
+    for i in range(n):
+        number = fib(i)
+    
+    print(number)
+    return number
+
+gen(int(input("Ktora liczba: ")))
